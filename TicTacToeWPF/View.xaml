@@ -1,0 +1,47 @@
+﻿<Window x:Class="TicTacToeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToeWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <!--Game Board -->
+        <Grid Margin="10">
+            <Grid.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Margin" Value="10"/>
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="r0c0" Click="Game_Button_Click" Grid.Row="0" Grid.Column="0" FontSize="50" Content=""/>
+            <Button x:Name="r0c1" Click="Game_Button_Click" Grid.Row="0" Grid.Column="1" FontSize="50" Content=""/>
+            <Button x:Name="r0c2" Click="Game_Button_Click" Grid.Row="0" Grid.Column="2" FontSize="50" Content=""/>
+            <Button x:Name="r1c0" Click="Game_Button_Click" Grid.Row="1" Grid.Column="0" FontSize="50" Content=""/>
+            <Button x:Name="r1c1" Click="Game_Button_Click" Grid.Row="1" Grid.Column="1" FontSize="50" Content=""/>
+            <Button x:Name="r1c2" Click="Game_Button_Click" Grid.Row="1" Grid.Column="2" FontSize="50" Content=""/>
+            <Button x:Name="r2c0" Click="Game_Button_Click" Grid.Row="2" Grid.Column="0" FontSize="50" Content=""/>
+            <Button x:Name="r2c1" Click="Game_Button_Click" Grid.Row="2" Grid.Column="1" FontSize="50" Content=""/>
+            <Button x:Name="r2c2" Click="Game_Button_Click" Grid.Row="2" Grid.Column="2" FontSize="50" Content=""/>
+        </Grid>
+
+        <!--New Game -->
+        <Button x:Name="NewGameButton" Click="NewGameButton_Click" Grid.Row="1" Content="New Game" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+
+</Window>

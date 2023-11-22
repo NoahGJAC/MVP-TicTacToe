@@ -1,0 +1,125 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "TictacToe/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/TictacToe.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TictacToe.dll": {}
+        }
+      },
+      "TicTacToeConsole/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TictacToe": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TicTacToeConsole.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TicTacToeConsole.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TictacToe/1.0.0": {
+      "type": "project",
+      "path": "../TictacToe/TictacToe.csproj",
+      "msbuildProject": "../TictacToe/TictacToe.csproj"
+    },
+    "TicTacToeConsole/1.0.0": {
+      "type": "project",
+      "path": "../TicTacToeConsole/TicTacToeConsole.csproj",
+      "msbuildProject": "../TicTacToeConsole/TicTacToeConsole.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "TicTacToeConsole >= 1.0.0",
+      "TictacToe >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\2028706\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\2028706\\Desktop\\TicTacToe\\TicTacToeWPF\\TicTacToeWPF.csproj",
+      "projectName": "TicTacToeWPF",
+      "projectPath": "C:\\Users\\2028706\\Desktop\\TicTacToe\\TicTacToeWPF\\TicTacToeWPF.csproj",
+      "packagesPath": "C:\\Users\\2028706\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\2028706\\Desktop\\TicTacToe\\TicTacToeWPF\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\2028706\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "C:\\Users\\2028706\\Desktop\\TicTacToe\\TicTacToeConsole\\TicTacToeConsole.csproj": {
+              "projectPath": "C:\\Users\\2028706\\Desktop\\TicTacToe\\TicTacToeConsole\\TicTacToeConsole.csproj"
+            },
+            "C:\\Users\\2028706\\Desktop\\TicTacToe\\TictacToe\\TictacToe.csproj": {
+              "projectPath": "C:\\Users\\2028706\\Desktop\\TicTacToe\\TictacToe\\TictacToe.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
